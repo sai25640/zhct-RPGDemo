@@ -15,6 +15,20 @@ using UnityEngine.EventSystems;
 
 namespace SUIFW
 {
+    /// <summary>
+    /// UI事件类型枚举
+    /// </summary>
+    public enum UIEventType
+    {
+        OnClick,
+        OnDown,
+        OnEnter,
+        OnExit,
+        OnUp,
+        OnSeclect,
+        OnUpdateSelect,
+    };
+
     public class EventTriggerListener : UnityEngine.EventSystems.EventTrigger
     {
         public delegate void VoidDelegate(GameObject go);

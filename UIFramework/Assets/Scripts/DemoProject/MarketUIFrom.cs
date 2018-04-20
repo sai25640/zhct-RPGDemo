@@ -15,7 +15,7 @@ using System.Collections;
 using System.Collections.Generic;
 using SUIFW;
 using UnityEngine;
-
+using DG.Tweening;
 namespace DemoProject
 {
     public class MarketUIFrom : BaseUIForm
@@ -32,7 +32,7 @@ namespace DemoProject
                 P=> CloseUIForm()                
                 );
             //注册道具事件：神杖 
-            RigisterButtonObjectEvent("BtnTicket",
+            RigisterButtonObjectEventEX("BtnTicket", UIEventType.OnEnter,
                 P =>
                 {
                     //打开子窗体
@@ -40,9 +40,11 @@ namespace DemoProject
                     //传递数据
                     string[] strArray = new string[] { "神杖详情", "神杖详细介绍。。。" };
                     SendMessage("Props", "ticket", strArray);
+                    Debug.Log("OnEnter");
                 }
                 );
-
+            RigisterButtonObjectEventEX("BtnTicket", UIEventType.OnExit, P => UIManager.GetInstance().CloseUIForms(ProConst.PRO_DETAIL_UIFORM));
+        
             //注册道具事件：战靴 
             RigisterButtonObjectEvent("BtnShoe",
                 P =>
@@ -67,6 +69,17 @@ namespace DemoProject
                 }
                 );
         }
-		
-	}
+
+        //自定义显示效果
+        public override void Display()
+        {
+            base.Display();
+            CanvasGroup cg = this.gameObject.GetComponent<CanvasGroup>();
+            cg.alpha = 0;
+            cg.DOFade(1f, .5f);
+            //Debug.Log("Display");
+        }
+
+       
+    }
 }

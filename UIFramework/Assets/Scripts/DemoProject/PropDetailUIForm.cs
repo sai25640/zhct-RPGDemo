@@ -17,7 +17,7 @@ using System.Net.Mime;
 using SUIFW;
 using UnityEngine;
 using UnityEngine.UI;
-
+using DG.Tweening;
 namespace DemoProject
 {
 	public class PropDetailUIForm : BaseUIForm
@@ -50,6 +50,32 @@ namespace DemoProject
            );
 
         }//Awake_end
-		
-	}
+
+        private bool isDisplay = false;
+
+        //自定义显示效果
+        //public override void Display()
+        //{
+        //    if (isDisplay == true) return;
+  
+        //    base.Display();
+        //    CanvasGroup cg = this.gameObject.GetComponent<CanvasGroup>();
+        //    cg.alpha = 0;
+        //    cg.DOFade(1f, .5f);
+        //    //Debug.Log("Display");
+        //    isDisplay = true;
+
+        //}
+
+        //public override void Hiding()
+        //{
+        //    isDisplay = false;
+        //    CanvasGroup cg = this.gameObject.GetComponent<CanvasGroup>();
+        //    //cg.alpha = 0;
+        //    cg.DOFade(0f, .5f);
+        //    base.Hiding();
+        //   // Debug.Log("Hiding");
+           
+        //}
+    }
 }

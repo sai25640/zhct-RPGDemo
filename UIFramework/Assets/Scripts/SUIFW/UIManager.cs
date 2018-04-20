@@ -407,6 +407,7 @@ namespace SUIFW
             foreach (BaseUIForm baseUI in _DicCurrentShowUIForms.Values)
             {
                 baseUI.Hiding();
+                print(baseUI.name);
             }
             foreach (BaseUIForm staUI in _StaCurrentUIForms)
             {

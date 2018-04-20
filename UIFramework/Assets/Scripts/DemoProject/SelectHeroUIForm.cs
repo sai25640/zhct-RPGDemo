@@ -57,7 +57,12 @@ namespace DemoProject
 
             //注册返回上一个页面
             RigisterButtonObjectEvent("BtnClose",
-                m=>CloseUIForm()
+                m=>
+                {
+                    CloseUIForm();
+                    UIManager.GetInstance().CloseUIForms(ProConst.HERO_BUSINESSMAN_UIFORM);
+                    UIManager.GetInstance().CloseUIForms(ProConst.HERO_TRAVELLER_UIFORM);
+                } 
                 );
         }
     }

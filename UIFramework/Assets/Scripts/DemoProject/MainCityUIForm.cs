@@ -27,7 +27,7 @@ namespace DemoProject
 
 		    //事件注册
             RigisterButtonObjectEvent("BtnMarket",
-                p => OpenUIForm(ProConst.MARKET_UIFORM)           
+                p=> OpenUIForm(ProConst.MARKET_UIFORM)           
                 );
 
         }

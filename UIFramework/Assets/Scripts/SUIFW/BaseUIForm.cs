@@ -37,14 +37,13 @@ namespace SUIFW
 	        set { _CurrentUIType = value; }
 	    }
 
-
         #region  窗体的四种(生命周期)状态
 
         /// <summary>
         /// 显示状态
         /// </summary>
 	    public virtual void Display()
-	    {
+        {  
 	        this.gameObject.SetActive(true);
             //设置模态窗体调用(必须是弹出窗体)
             if (_CurrentUIType.UIForms_Type==UIFormType.PopUp)
@@ -90,6 +89,7 @@ namespace SUIFW
 
         #endregion
 
+
         #region 封装子类常用的方法
 
         /// <summary>
@@ -105,6 +105,49 @@ namespace SUIFW
             {
                 EventTriggerListener.Get(goButton).onClick = delHandle;
             }	    
+        }
+
+        /// <summary>
+        /// 注册按钮事件扩展方法
+        /// </summary>
+        /// <param name="buttonName">按钮节点名称</param>
+        /// <param name="delHandle">需要注册的方法</param>
+        /// <param name="eventType">UI事件类型</param>
+        protected void RigisterButtonObjectEventEX(string buttonName, UIEventType eventType, EventTriggerListener.VoidDelegate delHandle  )
+        {
+            GameObject goButton = UnityHelper.FindTheChildNode(this.gameObject, buttonName).gameObject;
+            //给按钮注册事件方法
+            if (goButton != null)
+            {
+                switch (eventType)
+                {
+                    case UIEventType.OnClick:
+                        EventTriggerListener.Get(goButton).onClick = delHandle;
+                        break;
+                    case UIEventType.OnDown:
+                        EventTriggerListener.Get(goButton).onDown = delHandle;
+                        break;
+                    case UIEventType.OnEnter:
+                        EventTriggerListener.Get(goButton).onEnter = delHandle;
+                        break;
+                    case UIEventType.OnExit:
+                        EventTriggerListener.Get(goButton).onExit = delHandle;
+                        break;
+                    case UIEventType.OnUp:
+                        EventTriggerListener.Get(goButton).onUp = delHandle;
+                        break;
+                    case UIEventType.OnSeclect:
+                        EventTriggerListener.Get(goButton).onSelect = delHandle;
+                        break;
+                    case UIEventType.OnUpdateSelect:
+                        EventTriggerListener.Get(goButton).onUpdateSelect = delHandle;
+                        break;
+                    default:
+                        Debug.Log("没有你要的事件类型， 需要你自己在EventTriggerListener类注册事件类型");
+                        break;
+                }
+               
+            }
         }
 
         /// <summary>

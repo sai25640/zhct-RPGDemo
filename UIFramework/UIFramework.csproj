@@ -221,6 +221,18 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
@@ -232,18 +244,6 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets/Demigiant/DOTween/DOTween.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween46">
-      <HintPath>Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween43">
-      <HintPath>Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween50">
-      <HintPath>Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -280,10 +280,41 @@
     <Compile Include="Assets\Scripts\TestJson\PersonInfo.cs" />
     <Compile Include="Assets\Scripts\TestJson\TestUnityJson.cs" />
     <Compile Include="Assets\Scripts\TestJson\TestUnityJson2.cs" />
+    <Compile Include="Assets\Scripts\U3DAvatar\AvatarButton.cs" />
+    <Compile Include="Assets\Scripts\U3DAvatar\AvatarSys.cs" />
+    <Compile Include="Assets\Scripts\U3DAvatar\loadAvatar.cs" />
+    <Compile Include="Assets\Scripts\U3DAvatar\SpinWithMouse.cs" />
+    <Compile Include="Assets\ShaderWeaver\Examples\Projects\_Scripts\Bloom\ExampleBloom.cs" />
+    <Compile Include="Assets\ShaderWeaver\Examples\Projects\_Scripts\Bloom\ExampleEffectsBase.cs" />
+    <Compile Include="Assets\ShaderWeaver\Examples\Projects\_Scripts\Robot.cs" />
+    <Compile Include="Assets\ShaderWeaver\Examples\Projects\_Scripts\RobotControl.cs" />
+    <Compile Include="Assets\ShaderWeaver\Examples\Projects\_Scripts\ShaderValuePlayer.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Common\SWDraw.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Common\SWGlobalSettings.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Common\SWLayerMask.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Common\SWRectExtensions.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Common\SWRegex.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Common\SWTexture2DEx.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Data\SWDataCode.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Data\SWDataGradient.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Data\SWDataManager.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Data\SWDataManager_Code.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Data\SWDataNode.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\MonoBehaviours\SpriteComponents\SWSpriteAnimation.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\MonoBehaviours\SpriteComponents\SWSpriteComponent.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\MonoBehaviours\SpriteComponents\SWSpriteReflection.cs" />
+    <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\MonoBehaviours\SWPreview.cs" />
+    <Compile Include="Assets\ShaderWeaver\Tutorials\Tutorial14 - Refract Node\SWSimpleCameraFollow.cs" />
+    <Compile Include="Assets\ShaderWeaver\Tutorials\Tutorial7 - Alpha Node\AlphaControl.cs" />
+    <Compile Include="Assets\Sources\Character\Env\Glow\GlowEffect.cs" />
+    <Compile Include="Assets\Sources\Character\Env\Glow\ImageEffects.cs" />
+    <Compile Include="Assets\Sources\Character\Env\MirrorReflection\MirrorReflection.cs" />
+    <Compile Include="Assets\Zw\Scripts\DragRound.cs" />
     <Compile Include="Assets\Zw\Scripts\HeroSclectUIManager.cs" />
     <Compile Include="Assets\Zw\Scripts\LoginUIManager.cs" />
     <Compile Include="Assets\Zw\Scripts\MainCityUIManager.cs" />
     <Compile Include="Assets\Zw\Test\Test2.cs" />
+    <Compile Include="Assets\Zw\Test\Test3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Demigiant\DOTween\DOTween.XML" />
@@ -292,6 +323,67 @@
     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
     <None Include="Assets\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
+    <None Include="Assets\Models\Player\unity\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
+    <None Include="Assets\Models\Player\unity\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
+    <None Include="Assets\Models\Player\unity\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
+    <None Include="Assets\Models\Player\unity\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
+    <None Include="Assets\Models\Player\unity\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
+    <None Include="Assets\Models\Player\unity\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
+    <None Include="Assets\Models\Player\unity\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
+    <None Include="Assets\Models\Player\unity\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
+    <None Include="Assets\Models\Player\unity\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
+    <None Include="Assets\Models\Player\unity\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\Card_Arrow\arrow.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\Card_Fire\fire.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\Card_Lightening\lightening.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\Card_Man\xman.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\Card_Ninjia\ninja.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\Card_Wolf\wolf.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\CodeExamples\contrast.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\CodeExamples\grayscale.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\CodeExamples\oldphoto.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\CodeExamples\twirl.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\OtherRes\card_shadow.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\Sprite_Cape\cape.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\Sprite_Dissolve\dissolve.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\Sprite_Sword\sword.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\Sprite_Vanish\vanish.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\Sprite_View\view.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\UI_Button\button1.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\UI_Button\button2.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\UI_Button\button3.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\UI_Images\button.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\UI_Text\ui_Text.shader" />
+    <None Include="Assets\ShaderWeaver\Examples\Projects\_Scripts\Bloom\ExampleBloom.shader" />
+    <None Include="Assets\ShaderWeaver\Plugin\Shaders\Rect.shader" />
+    <None Include="Assets\ShaderWeaver\Plugin\Shaders\RectRGBA.shader" />
+    <None Include="Assets\ShaderWeaver\Plugin\Shaders\RectTRS.shader" />
+    <None Include="Assets\ShaderWeaver\Plugin\Shaders\RectTRSMask.shader" />
+    <None Include="Assets\ShaderWeaver\Plugin\Shaders\RectTRSPremask.shader" />
+    <None Include="Assets\ShaderWeaver\ReadMe.txt" />
+    <None Include="Assets\ShaderWeaver\ReleaseNote.txt" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial1 - Intro\tutorial1.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial10 - Sprite Lighting\SpriteLight.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial11 - Animation Sheet\animationSheet.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial12 - Blur Node\blur.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial13 - Retro Node\retro.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial14 - Refract Node\refract.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial15 - Reflect Node\reflect.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial16 - Mixer Node\dissolve_refract.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial17 - Dummy Node\outline1.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial18 - Code Node\outline2.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial19 - Coord Node\vortex.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial2 - Color Node\tutorial2.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial3 - Mask Node\tutorial3.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial3 - Mask Node\tutorial3_2.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial4 - UV Node\tutorial4.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial5 - Remap Node 1\tutorial5.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial6 - Remap Node 2\tutorial6.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial7 - Alpha Node\alpha.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial8 - Gold Card\goldCard.shader" />
+    <None Include="Assets\ShaderWeaver\Tutorials\Tutorial9 - Sprite Animation\spriteAnimation.shader" />
+    <None Include="Assets\Sources\Character\Env\Glow\GlowEffectDownsample.shader" />
+    <None Include="Assets\Sources\Character\Env\MirrorReflection\MirrorReflection.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

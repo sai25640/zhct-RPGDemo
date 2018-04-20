@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Zw/Scenes/MainCityScene.unity
+- path: Assets/Scenes/SelectHeroScene1.unity
   isLoaded: 1
   isActive: 1

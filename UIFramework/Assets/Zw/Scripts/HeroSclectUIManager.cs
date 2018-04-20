@@ -9,10 +9,15 @@ public class HeroSclectUIManager : MonoBehaviour {
     public GameObject ImgDescriptionHero2;
     public Button hero1;
     public Button hero2;
+    public GameObject hero1Obj;
+    public GameObject hero2Obj;
+
     public void OnHero1ButtonClick()
     {
         ImgDescriptionHero1.SetActive(true);
         ImgDescriptionHero2.SetActive(false);
+        hero1Obj.SetActive(true);
+        hero2Obj.SetActive(false);
         //ColorBlock cb = new ColorBlock();
         //cb.normalColor = new Color(255, 100, 100, 255);
         //cb.highlightedColor = new Color(245, 245, 245, 255);
@@ -29,8 +34,10 @@ public class HeroSclectUIManager : MonoBehaviour {
     {
         ImgDescriptionHero1.SetActive(false);
         ImgDescriptionHero2.SetActive(true);
-       // hero1.color = new Color(255, 255, 255, 255);
-       // hero2.color = new Color(255, 100, 100, 255);
+        hero1Obj.SetActive(false);
+        hero2Obj.SetActive(true);
+        // hero1.color = new Color(255, 255, 255, 255);
+        // hero2.color = new Color(255, 100, 100, 255);
     }
 
 	public void OnEnterGameButtonClick()
