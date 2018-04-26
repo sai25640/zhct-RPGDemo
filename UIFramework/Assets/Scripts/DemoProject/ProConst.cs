@@ -27,7 +27,7 @@ namespace DemoProject
         public const string MARKET_UIFORM = "MarketUIFrom";
         public const string HERO_BUSINESSMAN_UIFORM = "BusinessmanUIForm";
         public const string HERO_TRAVELLER_UIFORM = "TravellerUIForm";
-
+        public const string SELECT_HERO_FORM2 = "SelectHeroUIForm2";
 
         /* 常量定义： 其他 */
 

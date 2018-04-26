@@ -307,6 +307,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Editor\AddFileHeadComment.cs" />
     <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Editor\EditorCommon\EditorCoroutineRunner.cs" />
     <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Editor\EditorCommon\SWCommon.cs" />
     <Compile Include="Assets\ShaderWeaver\Plugin\Scripts\Editor\EditorCommon\SWEditorTools.cs" />

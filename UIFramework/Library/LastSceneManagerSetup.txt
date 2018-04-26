@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/SelectHeroScene1.unity
+- path: Assets/Zw/Scenes/LoginScene.unity
   isLoaded: 1
   isActive: 1

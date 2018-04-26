@@ -257,7 +257,9 @@
     <Compile Include="Assets\Scripts\DemoProject\ProConst.cs" />
     <Compile Include="Assets\Scripts\DemoProject\PropDetailUIForm.cs" />
     <Compile Include="Assets\Scripts\DemoProject\SelectHeroUIForm.cs" />
+    <Compile Include="Assets\Scripts\DemoProject\SelectHeroUIForm2.cs" />
     <Compile Include="Assets\Scripts\DemoProject\StartProject.cs" />
+    <Compile Include="Assets\Scripts\DemoProject\StartSelectHeroSceneUI.cs" />
     <Compile Include="Assets\Scripts\DemoProject\TravellerUIForm.cs" />
     <Compile Include="Assets\Scripts\SUIFW\BaseUIForm.cs" />
     <Compile Include="Assets\Scripts\SUIFW\Config\ConfigManagerByJson.cs" />
@@ -280,10 +282,6 @@
     <Compile Include="Assets\Scripts\TestJson\PersonInfo.cs" />
     <Compile Include="Assets\Scripts\TestJson\TestUnityJson.cs" />
     <Compile Include="Assets\Scripts\TestJson\TestUnityJson2.cs" />
-    <Compile Include="Assets\Scripts\U3DAvatar\AvatarButton.cs" />
-    <Compile Include="Assets\Scripts\U3DAvatar\AvatarSys.cs" />
-    <Compile Include="Assets\Scripts\U3DAvatar\loadAvatar.cs" />
-    <Compile Include="Assets\Scripts\U3DAvatar\SpinWithMouse.cs" />
     <Compile Include="Assets\ShaderWeaver\Examples\Projects\_Scripts\Bloom\ExampleBloom.cs" />
     <Compile Include="Assets\ShaderWeaver\Examples\Projects\_Scripts\Bloom\ExampleEffectsBase.cs" />
     <Compile Include="Assets\ShaderWeaver\Examples\Projects\_Scripts\Robot.cs" />
@@ -309,10 +307,15 @@
     <Compile Include="Assets\Sources\Character\Env\Glow\GlowEffect.cs" />
     <Compile Include="Assets\Sources\Character\Env\Glow\ImageEffects.cs" />
     <Compile Include="Assets\Sources\Character\Env\MirrorReflection\MirrorReflection.cs" />
-    <Compile Include="Assets\Zw\Scripts\DragRound.cs" />
+    <Compile Include="Assets\Zw\Scripts\HeroList.cs" />
     <Compile Include="Assets\Zw\Scripts\HeroSclectUIManager.cs" />
     <Compile Include="Assets\Zw\Scripts\LoginUIManager.cs" />
     <Compile Include="Assets\Zw\Scripts\MainCityUIManager.cs" />
+    <Compile Include="Assets\Zw\Scripts\U3DAvatar\AvatarButton.cs" />
+    <Compile Include="Assets\Zw\Scripts\U3DAvatar\AvatarSys.cs" />
+    <Compile Include="Assets\Zw\Scripts\U3DAvatar\loadAvatar.cs" />
+    <Compile Include="Assets\Zw\Scripts\U3DAvatar\SpinWithMouse.cs" />
+    <Compile Include="Assets\Zw\Test\DragRound.cs" />
     <Compile Include="Assets\Zw\Test\Test2.cs" />
     <Compile Include="Assets\Zw\Test\Test3.cs" />
   </ItemGroup>

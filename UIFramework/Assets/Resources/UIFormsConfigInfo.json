@@ -25,7 +25,9 @@
 "Value":"UIPrefabs\\BusinessmanUIForm"},
 
 {"Key":"TravellerUIForm",
-"Value":"UIPrefabs\\TravellerUIForm"}
+"Value":"UIPrefabs\\TravellerUIForm"},
 
+{"Key":"SelectHeroUIForm2",
+"Value":"UIPrefabs\\SelectHeroUIForm2"}
 ]
 }

@@ -17,7 +17,7 @@ using System.Collections.Generic;
 using SUIFW;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 namespace DemoProject
 {
     public class LogonUIForm : BaseUIForm
@@ -38,8 +38,9 @@ namespace DemoProject
             RigisterButtonObjectEvent("Btn_OK",
                 p =>
                 {
-                    OpenUIForm(ProConst.SELECT_HERO_FORM);
-                    OpenUIForm(ProConst.HERO_BUSINESSMAN_UIFORM);
+                    SceneManager.LoadScene("SelectHeroScene1");
+                    //OpenUIForm(ProConst.SELECT_HERO_FORM);
+                    //OpenUIForm(ProConst.HERO_BUSINESSMAN_UIFORM);
                 }
 
                 );

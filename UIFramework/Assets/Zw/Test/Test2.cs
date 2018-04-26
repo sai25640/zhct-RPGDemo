@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class Test2: MonoBehaviour {
 
     public Button button;
+
 	// Use this for initialization
 	void Start () {
         ColorBlock cb = new ColorBlock();
