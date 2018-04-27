@@ -44,8 +44,9 @@ public class LoginUIManager : MonoBehaviour {
     /// <summary>
     /////////////////////////////////////////// 选择英雄界面/////////////////////////////////////////////////////
     /// </summary>
-
+    public HeroList heroList;
     private int heroIndex = 0;
+    private int heroCount = 5;
     public int HeroIndex
     {
         get
@@ -58,23 +59,16 @@ public class LoginUIManager : MonoBehaviour {
             heroIndex = value;
         }
     }
-    private int heroCount = 5;
-    public Transform heroList;
+   
     public void OnReturnButtonClick()
     {
         selectHeroPanel.SetActive(false);
         loginPanel.SetActive(true);
     }
 
-   
     public void OnRandomButtonClick()
     {
-        Debug.Log("RandomNumber:" + HeroIndex);
-        HeroIndex++;
-        if (HeroIndex >= heroCount)
-        {
-            HeroIndex = 0;
-        }
+        heroList.JobRandomExchange();
     }
 
     public void OnSelectWorldButtonClick()
@@ -92,8 +86,6 @@ public class LoginUIManager : MonoBehaviour {
     public GameObject leftButton;
     public GameObject rightButton;
 
-    
-
     public void OnLeftButtonClick()
     {
         worldSelectScrollbar.value = 0;
@@ -104,7 +96,11 @@ public class LoginUIManager : MonoBehaviour {
         worldSelectScrollbar.value = 1;
         leftButton.SetActive(true);
     }
-
+    public void OnSelectWorldReturnButtonClick()
+    {
+        selectWorldPanel.SetActive(false);
+        selectHeroPanel.SetActive(true);
+    }
     private void Update()
     {
         //sliderText.text = (int)(slider.value*100) + "%";

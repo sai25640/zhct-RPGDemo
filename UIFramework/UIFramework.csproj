@@ -309,6 +309,7 @@
     <Compile Include="Assets\Sources\Character\Env\MirrorReflection\MirrorReflection.cs" />
     <Compile Include="Assets\Zw\Scripts\HeroList.cs" />
     <Compile Include="Assets\Zw\Scripts\HeroSclectUIManager.cs" />
+    <Compile Include="Assets\Zw\Scripts\JobSelectToggleGroup.cs" />
     <Compile Include="Assets\Zw\Scripts\LoginUIManager.cs" />
     <Compile Include="Assets\Zw\Scripts\MainCityUIManager.cs" />
     <Compile Include="Assets\Zw\Scripts\U3DAvatar\AvatarButton.cs" />
